@@ -128,19 +128,7 @@
     }
 }
 
-// @media (min-width: 1200px){
-// .userInputs {
-//     flex-direction: row;
-// }}
 
-// @media (min-width: 992px){
-// .userInputs {
-//     flex-direction: row;
-// }}
-// @media (min-width: 768px){
-// .userInputs {
-//     flex-direction: row;
-// }}
 @media (min-width: 576px){
 .userInputs {
     flex-direction: row;
@@ -148,6 +136,9 @@
 @media (max-width: 576px){
     .userInputs {
         flex-direction: column;
+            > div:last-child{
+                margin:0!important;
+            }
 }}
 
 
