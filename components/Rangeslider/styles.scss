@@ -1,0 +1,98 @@
+@import '../../public/css/global';
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    direction: ltr;
+    .rangeSliderHeader{
+        display: flex;
+        justify-content: space-between;
+    
+        .rangeSliderLabel{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+        .rangeSliderSpan{
+            font-weight: 700;
+            font-size: 20px;
+            font-family: "OpenSanceBold";
+            margin-bottom: 25px;
+        }
+    }
+
+    .rangeSlider{
+
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+
+        .rangeSliderLeftSide{
+            width: 30px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            margin-top: -24px;
+            > span {
+                color:#d3d3d3
+            }
+        }
+        .rangeSliderCenter{
+            flex: 1 1;
+            .rangeSliderCustomLabels {
+                display: inline-flex;
+                justify-content: space-between;
+                width: 105%;
+                margin: 10px -13px 0;
+                color: #aaa;
+                font-family: Helvetica Neue,san-serif;
+                font-size: .8rem;
+                white-space: nowrap;
+            }
+         }
+        .rangeSliderRightSide{
+            width: 30px;
+            display: flex;
+            align-items: center;
+            font-weight: bolder;
+            cursor: pointer;
+            flex-direction: row-reverse;
+            margin-top: -24px;
+            > span {
+                color:#d3d3d3
+            }
+        } 
+
+        :global(.ant-slider-track ){
+            position: absolute;
+            height: 4px;
+            border-radius: 4px;
+            background-color: $--input-range-bg;
+          
+        }
+        :global(.ant-slider-handle){
+            position: absolute;
+            margin-left: 0!important;
+            margin-top: -10px;
+            width: 27px;
+            height: 27px;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 1px solid gray;
+            background-color:$--input-range-bg;
+        }
+        :global(.ant-slider:hover .ant-slider-handle:not(.ant-tooltip-open)) {
+            border-color: unset!important;
+        }
+        :global(.ant-slider-handle:focus){
+            border-color: #46a6ff;
+            -webkit-box-shadow:unset; 
+            box-shadow: unset; 
+            outline: none;
+        }
+
+    }
+
+    
+}
+

@@ -1,0 +1,78 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": "."
+  },
+
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/DateRangePicker/components/To/ToCalendar.tsx", "components/Sidebar/colors.js", "store/GetCategories/saga/index.js"]
+}
+// {
+//   "compileOnSave": false,
+//   "compilerOptions": {
+//     "target": "esnext",
+//     "module": "esnext",
+//     "jsx": "preserve",
+//     "allowJs": false,
+//     "strict": true,
+//     "moduleResolution": "node",
+//     "allowSyntheticDefaultImports": true,
+//     "noUnusedLocals": true,
+//     "noUnusedParameters": true,
+//     "removeComments": true,
+//     "preserveConstEnums": true,
+//     "sourceMap": true,
+//     "skipLibCheck": true,
+//     "esModuleInterop": true,
+//     "baseUrl": ".",
+//     "typeRoots": [
+//       "./node_modules/@types",
+//       "./typings"
+//     ],
+//     "lib": [
+//       "dom",
+//       "es2017"
+//     ],
+//     "paths": {
+//       "@components/*": [
+//         "./components/*"
+//       ],
+//       "@containers/*": [
+//         "./containers/*"
+//       ],
+//       "@store/*": [
+//         "./store/*"
+//       ]
+//     },
+//     "forceConsistentCasingInFileNames": true,
+//     "noEmit": true,
+//     "resolveJsonModule": true,
+//     "isolatedModules": true
+//   },
+//   "exclude": [
+//     "dist",
+//     ".next",
+//     "out",
+//     "node_modules",
+//     "next.config.js",
+//     "postcss.config.js",
+//     "**/*.spec.ts",
+//     "**/*.spec.tsx",
+//     "**/*.test.ts",
+//     "**/*.test.tsx",
+//     "coverage"
+//   ]
+// }

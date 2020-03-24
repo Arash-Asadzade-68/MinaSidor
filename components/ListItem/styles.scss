@@ -1,0 +1,71 @@
+@import '../../public/css/global';
+
+.btnActive {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    background: #42ccad;
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+}
+
+.checkmark {
+    display:inline-block;
+    width: 22px;
+    height:22px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+.checkmarkCircle {
+    position: absolute;
+    width:22px;
+    height:22px;
+    background-color: #42ccad;
+    border-radius:11px;
+    left:0;
+    top:0;
+}
+
+.checkmarkStem {
+    position: absolute;
+    width:3px;
+    height:9px;
+    background-color:#fff;
+    left:11px;
+    top:6px;
+}
+
+.checkmarkTick {
+    position: absolute;
+    width:3px;
+    height:3px;
+    background-color:#fff;
+    left:8px;
+    top:12px;
+}
+
+@media (min-width: 1200px){
+.btn {
+    width: calc(25% - 20px);
+}}
+@media (min-width: 992px){
+.btn {
+    width: calc(25% - 20px);
+}}
+@media (min-width: 768px){
+.btn, .companyWidget {
+    width: calc(33.33% - 20px);
+}}
+@media (max-width: 576px){
+.btn {
+    width: calc(50% - 20px);
+}}
+@media (min-width: 576px){
+.btn {
+    width: calc(33.33% - 20px);
+}}
+

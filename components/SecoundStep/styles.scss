@@ -1,0 +1,153 @@
+@import '../../public/css/global';
+
+.mainForm{
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    background:$--mainform-bg;
+    box-shadow:$--mainform-box-shadow;
+    padding: 0 6% 6%;
+    margin-top: 10px;
+
+    .formHeader{
+        height: 100px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-direction: row;
+        border-bottom: $--mainform-header-borderBottom;
+        >span{
+        font-size: $--mainform-header-fontSize;
+        padding: 0 10px;
+        }
+
+
+        .formCircleIcon{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $--mainform-header-circle-bg;
+            font-size: $--mainform-header-circle-fontSize;
+            color:$--mainform-header-circle-color;
+            flex-direction:row;
+        }
+    }
+   
+    .userInputs {
+        display: flex;
+        > div:last-child{
+            margin:$--input-even-margin;
+        }
+        .inputContainer {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+
+            .inputLabel{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+            .inputWithBtn {
+                display: flex;
+                border: 1px solid #d3d3d3;
+                height: 38px;
+                border-radius: 5px;
+                flex-direction: row;
+                .inputIcon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 35px;
+                }
+                .input{
+                    outline: none;
+                    border-radius: 0 5px 5px 0;
+                    height: 100%;
+                    border: unset;
+                }
+               
+            }
+          
+            .error.inputWithBtn {
+                border:1px solid red!important;
+            }
+        }
+    }
+    
+    .checkTerm{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        .checkboxText{
+            font-size: 13px;
+        }
+       
+    }
+    :global(.ant-checkbox-inner) {
+        width: 22px!important;
+        height: 22px!important;
+    }
+    :global(.ant-checkbox-checked .ant-checkbox-inner) {
+        background-color: #42ccad;
+        border-color: #42ccad;
+    }
+    :global(.ant-checkbox-inner)::after {
+        left: 7.571429px;
+        top: 1.142857px;
+        height: 12.142857px;
+    }
+
+    .Submit{
+        border-top: $--actions-border;
+        height: 120px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+        .warning {
+            background:$--btn-warning-bg;
+            color: #fff;
+        }
+        .largBtn{
+            min-height: 45px;
+            padding: 0 20px!important;
+            font-size: 17px;
+            width: 100%;
+        }
+    }
+    .validationMesssage{
+        color: red;
+        font-size: 12px;
+        display: block;
+        text-align: left;
+    }
+}
+
+// @media (min-width: 1200px){
+// .userInputs {
+//     flex-direction: row;
+// }}
+
+// @media (min-width: 992px){
+// .userInputs {
+//     flex-direction: row;
+// }}
+// @media (min-width: 768px){
+// .userInputs {
+//     flex-direction: row;
+// }}
+@media (min-width: 576px){
+.userInputs {
+    flex-direction: row;
+}}
+@media (max-width: 576px){
+    .userInputs {
+        flex-direction: column;
+}}
+
+

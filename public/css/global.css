@@ -1,0 +1,22 @@
+body{
+  background-color:rgb(235, 235, 238)!important;
+  font-family: "OpenSance";
+}
+:global(.ant-steps-item-title:after){
+  background: #FFFF!important;
+}
+/* * {
+  IRANSANS;
+} */
+@font-face {
+  font-family: "OpenSance";
+  src: url(../fonts/OpenSans/OpenSans-Regular.629a55a7.ttf);
+  font-weight: 700
+}
+
+@font-face {
+  font-family: "OpenSanceBold";
+  src: url(../fonts/OpenSans/OpenSans-Semibold.33f225b8.ttf);
+  font-weight: 700
+}
+
