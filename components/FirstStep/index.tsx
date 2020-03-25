@@ -38,7 +38,9 @@ class FirstStep extends Component<PropsTypes, StateTypes> {
     }
 
     _handleMoneyChange = (money: number) => {
-        this.setState({ money })
+        if(money > 10000000) this.setState({money:10000000})
+        else
+          this.setState({ money })
     }
     _handleYearChange = (month: number) => {
         this.setState({ month })
@@ -47,7 +49,7 @@ class FirstStep extends Component<PropsTypes, StateTypes> {
     _moneyIncrement = () => {
         const { money } = this.state;
         const newAmount = money + Money.steps
-        if (newAmount <= Money.max)
+        if (newAmount <= 10000000)
             this.setState({ money: newAmount })
     }
     _moneyDecrement = () => {

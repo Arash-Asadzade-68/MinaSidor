@@ -4,7 +4,7 @@ export const Money = {
     endLabel: "10 000 000 kr",
     steps: 125000,
     min: 100000,
-    max: 100000000,
+    max: 10100000,
     unit: "kr"
 };
 

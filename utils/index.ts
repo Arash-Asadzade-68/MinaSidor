@@ -1,7 +1,7 @@
 export const digitsRegex =/[\d]$/;
 export const dashAndDigitsRegex =/[\d-]$/;
 export const securityNumberRegex= /^[0-9]{8}-[0-9]{4}$/;
-export const phoneRegex =/^(0([1-9]{9}))$/
+export const phoneRegex =/^(0[1-9]([0-9]{8}))$/
 export const emailRegex = /^([a-zA-Z0-9])([a-zA-Z0-9\._])*@(([a-zA-Z0-9])+(\.))+([a-zA-Z]{2,4})+$/;
 
 export const _checkValidation = (e ,regex , id , Styles , errors) => {
